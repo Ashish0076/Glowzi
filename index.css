@@ -59,6 +59,10 @@ button{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 27px;
+  color: #231535;
 }
 #nav>#logo{
   margin: auto;
@@ -78,8 +82,37 @@ button{
   height: 100%;
   align-items: center;  
 }
+#nav #option>div:nth-child(3){
+  margin-left: -35px;
+}
+#nav #option div{
+  width: 600px;
+}
 #nav a{
   text-decoration: none;
+  position: relative;
+  margin-left: 10px;
+}
+#nav>#option svg:hover{
+  font-size: 11.4px
+}
+#nav>#option a:hover{
+  transition: 0.3s;
+  font-size: 11.4px;
+}
+#nav>#option a:after{
+  content: "";
+  position: absolute;
+  background-color: #231535;
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+  
+}
+#nav>#option a:hover:after{
+  width: 100%;
 }
 #nav>#search{
   width: 40%;
@@ -90,10 +123,38 @@ button{
   height: 100%;
   margin-right: 0px;
 }
+#nav>#search>div>form{
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+}
+#nav>#search>div>form>input[type="text"]{
+  height: 30px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid #8863fb;
+  width: 70%;
+}
+#nav>#search>div>form>input[type="submit"]{
+  border-start-end-radius: 5px;
+  border-end-end-radius: 5px;
+  border: 1px solid #8863fb;
+  height: 34px;
+  background-image: url(https://cdn.discordapp.com/attachments/1064919428598333504/1066376008653078557/IMG_20230121_204704.jpg);
+  background-size: 100%;
+  width: 40px;
+}
+
 #search div{
   display: flex;
   justify-content: space-evenly;
   height: 100%;
+  position: relative;
+}
+#pin{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 #search form{
   width: 300px;
@@ -103,15 +164,27 @@ button{
   font-weight: 550;
   font-size: 13px;
 }
-#search h3>svg{
-  margin-right: 10px;
+#search .a >svg{
   width: 15px;
 }
-#search div:nth-child(3){
+#search .a{
   width: 220px;
 }
 #search svg{
   width: 7%;
+}
+#search .a:after{
+  content: "";
+  position: absolute;
+  background-color: #231535;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 0px;
+  transition: 0.7s;
+}
+#nav .a:hover:after{
+  width: 100%;
 }
 
 
@@ -126,11 +199,19 @@ button{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: white;
 }
-#drop>a{
+#drop a{
   margin: 0px 12px;
   text-decoration: none;
   color: black;
 }
+#drop>ul{
+  list-style: none;
+  display: flex;
+}
+#rings{
+  display: none;
+}
+
 
 /* slider */
 #slider{
