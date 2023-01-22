@@ -198,20 +198,27 @@ button{
   justify-content: center;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: white;
+ 
 }
-#drop a{
+#drop>a{
   margin: 0px 12px;
   text-decoration: none;
-  color: black;
+  color: black; 
+  position: relative;
 }
-#drop>ul{
-  list-style: none;
-  display: flex;
+#drop a:after{
+  content: "";
+  position: absolute;
+  background-color: #231535;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
 }
-#rings{
-  display: none;
+#drop a:hover:after{
+  width: 100%;
 }
-
 
 /* slider */
 #slider{
@@ -220,6 +227,7 @@ button{
 }
 #slider img{
   width: 100%;
+  
 }
 #slider button:nth-child(1){
   font-size: 25px;
@@ -228,7 +236,7 @@ button{
   top: 88%;
   left: 45%;
   border-radius: 100%;
-  background-color: white;
+  background: none;
 }
 #slider button:nth-child(6){
   font-size: 25px;
@@ -237,7 +245,7 @@ button{
   top: 88%;
   left: 55%;
   border-radius: 100%;
-  background-color: white;
+  background: none;
 }
 #slider>div:nth-child(3){
   width: 10px;
