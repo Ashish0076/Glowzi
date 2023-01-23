@@ -3,7 +3,8 @@ Clone of CaratLane.com
 Hello! This is a clone of CaratLane.com. I made this clone with the use of HTML, CSS, Javascript. CaratLane is famous brand for jewellery shoping.
 
 
-Netlify link:- https://unique-pudding-d4fdeb.netlify.app/
+
+Netlify link:- https://clever-pasca-a0253f.netlify.app/
 
 
 Screenshot of website
